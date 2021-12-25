@@ -8,7 +8,7 @@ middle_name:
 last_name: Shen
 email: gshensvm@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  
+  Gerald Shen's Personal Website
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
@@ -47,6 +47,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
+twitter:
+  username: gerald_shen
+  card: summary
 
 github_username: geraldcsc # your GitHub user name
 gitlab_username: # your GitLab user name
@@ -148,6 +151,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-seo-tag
 
 # Sitemap settings
 defaults:
