@@ -13,7 +13,7 @@ footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔥 # the emoji used as the favicon
+icon: # the emoji used as the favicon
 url: https://geraldshen.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
@@ -41,7 +41,7 @@ max_width: 800px
 # Open Graph
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -51,7 +51,7 @@ twitter:
   username: gerald_shen
   card: summary
 
-github_username: geraldcsc # your GitHub user name
+github_username: gshennvm # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: gerald_shen # your Twitter handle
 linkedin_username: gerald-shen-5234211b7 # your LinkedIn user name
