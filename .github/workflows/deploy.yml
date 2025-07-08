@@ -14,13 +14,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code 
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "3.3.5"
+        bundler-cache: true
     - name: Install deps
       run: |
         gem install bundler
