@@ -16,7 +16,15 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <div class="title">{{entry.title}}</div>
+      <div class="title">
+        {% if entry.arxiv %}
+          <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" rel="noopener noreferrer">{{entry.title}}</a>
+        {% elsif entry.url %}
+          <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{entry.title}}</a>
+        {% else %}
+          {{entry.title}}
+        {% endif %}
+      </div>
       <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
@@ -86,9 +94,11 @@
     {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
     {% endif %}
+    {% comment %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
     {% endif %}
+    {% endcomment %}
     {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
     {% endif %}

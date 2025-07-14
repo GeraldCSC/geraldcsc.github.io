@@ -1,4 +1,117 @@
 <div class="publications">
-  <h2>selected publications</h2>
+  <h2>Research</h2>
   {% bibliography -f papers -q @*[selected=true]* %}
 </div>
+
+<style>
+/* Complete override for publications section */
+.publications * {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.post .publications,
+article .publications {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+}
+
+.publications {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+}
+
+.publications h1,
+.publications h2 {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.publications ol.bibliography {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.publications ol.bibliography li {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Aggressive override for Bootstrap grid */
+.publications .row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: left !important;
+}
+
+.publications .col-sm-2,
+.publications .col-sm-8,
+.publications .col-sm-10,
+.publications [class*="col-"] {
+  display: block !important;
+  flex: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: left !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+.publications .col-sm-2.abbr {
+  display: none !important;
+}
+
+.publications .bibliography li .title,
+.publications .bibliography li .author,
+.publications .bibliography li .venue {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Fix author list wrapping width */
+.publications .bibliography li .author {
+  max-width: 600px !important;
+  width: 600px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Style for title links with blue underline */
+.publications .title a {
+  color: #0076df !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+.publications .title a:hover {
+  color: #005bb5 !important;
+  text-decoration: underline !important;
+}
+
+/* Left align remaining links */
+.publications .links {
+  text-align: left !important;
+  margin-top: 10px !important;
+}
+</style>
